@@ -1,6 +1,3 @@
-<?php
-    include("form.php");
-?>
 <form action="form.php" method="post" class="flex flex-col w-[500px]">
     <label for="" class="w-fit">Nama Mahasiswa: </label>
     <input type="text" name="name_input" id="" class="px-3 py-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="masukan nama mahasiswa...">
