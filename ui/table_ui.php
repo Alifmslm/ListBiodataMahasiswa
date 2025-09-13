@@ -11,6 +11,8 @@ include('data.php');
                 foreach ($value as $key2 => $value2) {
                     echo "<th class=\"text-start border border-gray-300 px-3\">" . ucfirst($key2) . "</th>";
                 }
+                echo "<th class=\"text-start border border-gray-300 px-3\">Detail Button</th>";
+                echo "<th class=\"text-start border border-gray-300 px-3\">Delete Button</th>";
             } else {
                 # code...
                 break;
@@ -28,6 +30,8 @@ include('data.php');
         echo "<td class=\"border border-gray-300 px-2\">" . $value['umur'] . "</td>";
         echo "<td class=\"border border-gray-300 px-2\">" . ucfirst($value['jurusan']) . "</td>";
         echo "<td class=\"border border-gray-300 px-2\">" . ucfirst($value['hobby']) . "</td>";
+        echo "<td class=\"border border-gray-300 px-2\"><button class=\"w-fit px-5 font-bold text-white bg-blue-500 rounded cursor-pointer\">Go to Detail</button></td>";
+        echo "<td class=\"border border-gray-300 px-2\"><button class=\"w-fit px-5 font-bold text-white bg-red-500 rounded cursor-pointer\">Delete</button></td>";
         echo "</tr>";
     }
     ?>
