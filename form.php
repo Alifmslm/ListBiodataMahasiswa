@@ -4,10 +4,12 @@
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         # code...
-        $listMahasiswa['nama'][] = $_POST['name_input'];
-        $listMahasiswa['umur'][] = $_POST['age_input'];
-        $listMahasiswa['jurusan'][] = $_POST['jurusan_input'];
-        $listMahasiswa['hobby'][] = $_POST['hobby_input'];
+        $listMahasiswa[] =[
+            "nama" => $_POST["name_input"],
+            "umur" => $_POST["age_input"],
+            "jurusan" => $_POST["jurusan_input"],
+            "hobby" => $_POST["hobby_input"],
+        ];
 
         $_SESSION['mahasiswa'] = $listMahasiswa;
 
