@@ -30,7 +30,7 @@ include('data.php');
         echo "<td class=\"border border-gray-300 px-2\">" . ucfirst($value['jurusan']) . "</td>";
         echo "<td class=\"border border-gray-300 px-2\">" . ucfirst($value['hobby']) . "</td>";
         echo "<td class=\"border border-gray-300 px-2\"><a class=\"w-fit px-5 font-bold text-white bg-blue-500 rounded cursor-pointer\">Go to Detail</a></td>";
-        echo "<td class=\"border border-gray-300 px-2\"><a href=\"index.php?id={$value['id']}\" class=\"w-fit px-5 font-bold text-white bg-red-500 rounded cursor-pointer\">Delete</a></td>";          
+        echo "<td class=\"border border-gray-300 px-2\"><a href=\"index.php?action=delete&id={$value['id']}\" class=\"w-fit px-5 font-bold text-white bg-red-500 rounded cursor-pointer\">Delete</a></td>";          
         echo "</tr>";
     }
     ?>
