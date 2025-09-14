@@ -1,5 +1,5 @@
 <?php
-include('data.php');
+include('data.php');    
 ?>
 <table class="border-collapse border border-gray-400">
     <tr>
@@ -7,7 +7,6 @@ include('data.php');
         foreach ($listMahasiswa as $key => $value) {
             if ($key == 0) {
                 # code...
-                echo "<th class=\"text-start border border-gray-300 px-3\">ID</th>";
                 foreach ($value as $key2 => $value2) {
                     echo "<th class=\"text-start border border-gray-300 px-3\">" . ucfirst($key2) . "</th>";
                 }
@@ -30,8 +29,8 @@ include('data.php');
         echo "<td class=\"border border-gray-300 px-2\">" . $value['umur'] . "</td>";
         echo "<td class=\"border border-gray-300 px-2\">" . ucfirst($value['jurusan']) . "</td>";
         echo "<td class=\"border border-gray-300 px-2\">" . ucfirst($value['hobby']) . "</td>";
-        echo "<td class=\"border border-gray-300 px-2\"><button class=\"w-fit px-5 font-bold text-white bg-blue-500 rounded cursor-pointer\">Go to Detail</button></td>";
-        echo "<td class=\"border border-gray-300 px-2\"><button class=\"w-fit px-5 font-bold text-white bg-red-500 rounded cursor-pointer\">Delete</button></td>";
+        echo "<td class=\"border border-gray-300 px-2\"><a class=\"w-fit px-5 font-bold text-white bg-blue-500 rounded cursor-pointer\">Go to Detail</a></td>";
+        echo "<td class=\"border border-gray-300 px-2\"><a href=\"index.php?id={$value['id']}\" class=\"w-fit px-5 font-bold text-white bg-red-500 rounded cursor-pointer\">Delete</a></td>";          
         echo "</tr>";
     }
     ?>
